@@ -1,0 +1,61 @@
+.person {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+
+  &:hover {
+    .avatar {
+      box-shadow: 0 0 15px 3px rgba(#5c787e, 0.5);
+    }
+
+    .name {
+      text-decoration: underline;
+    }
+  }
+
+  .avatar-wrapper {
+    position: relative;
+    width: 11rem;
+    height: 11rem;
+
+    .avatar {
+      width: 100%;
+      height: 100%;
+      border-radius: 10rem;
+      transition: all 0.15s ease;
+    }
+
+    .envelope {
+      position: absolute;
+      display: grid;
+      place-items: center;
+      right: 0.35rem;
+      top: 0.35rem;
+      width: 2.25rem;
+      height: 2.25rem;
+      border-radius: 5rem;
+      background-color: #452e76;
+    }
+  }
+
+  .name {
+    color: #452e76;
+    font-size: 1.25rem;
+    font-weight: 500;
+  }
+
+  .position {
+    color: #48c3dc;
+    margin: 0;
+  }
+
+  .location {
+    color: #808080;
+    margin: {
+      top: 0.5rem;
+      bottom: 0;
+    }
+  }
+}

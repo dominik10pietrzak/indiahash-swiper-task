@@ -1,0 +1,52 @@
+.App {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  transition: all 0.1s ease;
+
+  .background {
+    position: absolute;
+    background: url('./assets/bg.png');
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 0;
+    opacity: 0.25;
+  }
+
+  * {
+    z-index: 1;
+  }
+
+  .page-heading {
+    color: #452e76;
+    margin: 0;
+    font-weight: 600;
+    font-size: 4rem;
+    transition: all 0.2s ease 0.15s;
+  }
+
+  .team-container {
+    margin-top: 6rem;
+    display: grid;
+    grid-template-columns: repeat(5, 14rem);
+    grid-gap: 3rem 2rem;
+    justify-content: center;
+  }
+
+  &.hidden-content {
+    opacity: 0;
+
+    .person {
+      opacity: 0;
+    }
+
+    .page-heading {
+      opacity: 0;
+    }
+  }
+}
