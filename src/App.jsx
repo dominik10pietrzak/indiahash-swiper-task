@@ -46,7 +46,6 @@ const App = () => {
       <SwiperBox
         isSwiperVisible={isSwiperVisible}
         currentPerson={currentPerson}
-        setCurrentPerson={setCurrentPerson}
         setSwiperVisibility={setSwiperVisibility}
       />
     </div>

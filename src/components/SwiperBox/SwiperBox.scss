@@ -61,8 +61,8 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      padding: 5rem 3.5rem;
-      max-width: 70rem;
+      padding: 4.5rem 4rem;
+      max-width: 66rem;
       background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' stroke='%23FFFFFF33' stroke-width='10' stroke-dasharray='25' stroke-dashoffset='25' stroke-linecap='square'/%3e%3c/svg%3e");
 
       .position {
@@ -70,7 +70,7 @@
         margin: 0;
         font-weight: lighter;
         text-shadow: 2px 0px 3px rgba(black, 0.55);
-        width: 100%;
+        width: auto;
         text-align: center;
       }
 

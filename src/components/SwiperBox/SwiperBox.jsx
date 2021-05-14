@@ -9,12 +9,7 @@ import SwiperCore, { Navigation } from 'swiper/core';
 
 import background from '../../assets/bg-swiper.png';
 
-const SwiperBox = ({
-  isSwiperVisible,
-  currentPerson,
-  setCurrentPerson,
-  setSwiperVisibility,
-}) => {
+const SwiperBox = ({ isSwiperVisible, currentPerson, setSwiperVisibility }) => {
   SwiperCore.use([Navigation]);
 
   const [swiper, setSwiper] = useState(null);
@@ -23,6 +18,7 @@ const SwiperBox = ({
     swiper.slideTo(index, 0);
   };
 
+  //Za każdym razem kiedy zmieni się wartość currentPerson zmienia się także slide.
   useEffect(() => {
     const activeSlide = data.indexOf(
       data.find((x) => x.id === currentPerson.id)
