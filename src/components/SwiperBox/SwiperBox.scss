@@ -37,10 +37,11 @@
 
   .hide-button {
     font-size: 4rem;
+    line-height: 4rem;
     cursor: pointer;
     position: absolute;
-    right: 2.5rem;
-    top: 2.5rem;
+    right: 3rem;
+    top: 3rem;
     font-weight: bold;
     margin: 0;
     transition: all 0.3s ease;
@@ -94,14 +95,15 @@
     .swiper-button-prev,
     .swiper-button-next {
       color: white;
-      padding: 0 2rem;
+      font-weight: bold;
+      transform: scale(1.5);
     }
 
     .swiper-button-prev {
-      left: 2rem;
+      left: 2.5rem;
     }
     .swiper-button-next {
-      right: 2rem;
+      right: 2.5rem;
     }
   }
 

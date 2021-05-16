@@ -3,17 +3,6 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
-  cursor: pointer;
-
-  &:hover {
-    .avatar {
-      box-shadow: 0 0 15px 3px rgba(#5c787e, 0.5);
-    }
-
-    .name {
-      text-decoration: underline;
-    }
-  }
 
   .avatar-wrapper {
     position: relative;
@@ -25,6 +14,11 @@
       height: 100%;
       border-radius: 10rem;
       transition: all 0.15s ease;
+      cursor: pointer;
+
+      &:hover {
+        filter: brightness(0.8);
+      }
     }
 
     .envelope {
