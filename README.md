@@ -1,4 +1,4 @@
-# Zadanie rekrutacyjne IndiaHash
+# Zadanie rekrutacyjne IndaHash
 
 Link do aplikacji: https://india-hash-swiper-task.herokuapp.com
 (Pierwsze załadowanie strony może chwilę zająć, ponieważ Heroku "usypia" aplikacje nieaktywne przez 30 minut.)
